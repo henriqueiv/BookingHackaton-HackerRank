@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		627C37011B9F93BD00B0546A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627C37001B9F93BD00B0546A /* main.swift */; };
+		627C37081B9FBCFE00B0546A /* NearbyAttractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627C37071B9FBCFE00B0546A /* NearbyAttractions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		627C36FD1B9F93BD00B0546A /* BookingHackerRank */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BookingHackerRank; sourceTree = BUILT_PRODUCTS_DIR; };
 		627C37001B9F93BD00B0546A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		627C37071B9FBCFE00B0546A /* NearbyAttractions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyAttractions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				627C37001B9F93BD00B0546A /* main.swift */,
+				627C37071B9FBCFE00B0546A /* NearbyAttractions.swift */,
 			);
 			path = BookingHackerRank;
 			sourceTree = "<group>";
@@ -119,6 +122,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				627C37011B9F93BD00B0546A /* main.swift in Sources */,
+				627C37081B9FBCFE00B0546A /* NearbyAttractions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
