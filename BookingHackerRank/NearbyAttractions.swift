@@ -20,7 +20,7 @@ extension String {
 }
 
 class NearbyAttractions:NSObject{
-    func degree2radians(value:Double) -> Double{
+    func degreeToRadians(value:Double) -> Double{
         return value * 3.14159265359 / 180.0
     }
     
@@ -51,16 +51,16 @@ class NearbyAttractions:NSObject{
     
     func distance_between(point1:Point, point2:Point) -> Double{
         var EARTH_RADIUS = 6371;//in km
-        var point1_lat_in_radians  = degree2radians( point1.latitude );
-        var point2_lat_in_radians  = degree2radians( point2.latitude );
-        var point1_long_in_radians  = degree2radians( point1.longitude );
-        var point2_long_in_radians  = degree2radians( point2.longitude );
+        var point1_lat_in_radians  = degreeToRadians( point1.latitude );
+        var point2_lat_in_radians  = degreeToRadians( point2.latitude );
+        var point1_long_in_radians  = degreeToRadians( point1.longitude );
+        var point2_long_in_radians  = degreeToRadians( point2.longitude );
         
         let sins = sin( point1_lat_in_radians ) * sin( point2_lat_in_radians )
         let cosin = cos( point1_lat_in_radians ) * cos( point2_lat_in_radians ) * cos( point2_long_in_radians - point1_long_in_radians)
         
         var distance = acos( sins + cosin ) * Double(EARTH_RADIUS)
-        distance = self.roundToPlaces(distance, decimalPlaces: 2)
+        distance = roundToPlaces(distance, decimalPlaces: 2)
         
         return distance
     }
